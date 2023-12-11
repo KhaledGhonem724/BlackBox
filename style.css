@@ -11,7 +11,7 @@ header {
   text-align: center;
   padding: 1em;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
 }
 .logo-container {
@@ -42,7 +42,7 @@ header {
 }
 
 button {
-    width: 100%;
+  width: 100%;
   background-color: #837d7d;
   /* Use the color you prefer */
   color: #fff;
@@ -120,7 +120,6 @@ button:hover {
   width: 300px;
 }
 
-
 label {
   display: block;
   margin-bottom: 8px;
@@ -129,13 +128,12 @@ label {
 
 input {
   width: calc(100% - 20px);
-padding: 8px; 
- margin-bottom: 16px;
+  padding: 8px;
+  margin-bottom: 16px;
   box-sizing: border-box;
 }
 
-
-li{
+li {
   font-size: 15px;
 }
 
@@ -155,4 +153,8 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1em;
+}
+#register {
+  margin-left: 250px;
+  font-size: 15px;
 }

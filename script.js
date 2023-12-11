@@ -3,21 +3,6 @@ function toggleLoginForm() {
     loginForm.classList.toggle('hidden');
 }
 
-function login() {
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
-
-    // Example validation - replace this with your actual login logic
-    if (email === 'user@example.com' && password === 'password') {
-        alert('Login successful!');
-        // You can redirect to another page or perform other actions after successful login
-    } else {
-        alert('Invalid email or password. Please try again.');
-    }
-
-    // Clear the form
-    document.getElementById('loginForm').reset();
-}
 
 function addSite() {
     var siteName = document.getElementById('siteName').value;
@@ -47,4 +32,9 @@ function addSite() {
     // Show the added data section
     var addedData = document.getElementById('addedData');
     addedData.classList.remove('hidden');
+}
+
+function redirectToSite() {
+    // Replace 'https://www.example.com' with the URL of the site you want to redirect to
+    window.location.href = 'index.html';
 }
