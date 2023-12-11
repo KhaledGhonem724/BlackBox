@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  border-radius: 50%;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.header-logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  /* Change the background color of your logo */
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.project-name {
+  font-size: 1.5em;
+}
+
+button {
+    width: 100%;
+  background-color: #837d7d;
+  /* Use the color you prefer */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #323131;
+  /* Darker shade for hover effect */
+}
+
+.hidden {
+  display: none;
+}
+
+.main-section {
+  margin: 20px;
+  line-height: 1;
+  display: flex;
+  font-size: 29px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+}
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  /* Adjust as needed */
+}
+.site-details-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.site-details-form {
+  width: 300px;
+  /* Adjust as needed */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#addedData {
+  margin-left: 5%;
+  width: 80%;
+  /* Adjust as needed */
+  margin-top: 20px;
+  max-height: 500px;
+  /* Adjust as needed */
+  overflow-y: auto;
+}
+.section1 {
+  margin: 20px;
+  line-height: 1;
+  display: flex;
+  font-size: 29px;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  padding: 20px;
+}
+.login-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+input {
+  width: calc(100% - 20px);
+padding: 8px; 
+ margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+
+li{
+  font-size: 15px;
+}
+
+.site-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
