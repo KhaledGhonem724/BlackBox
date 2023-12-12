@@ -14,7 +14,7 @@
         <div class="login-container">
 
             <!-- Login Form -->
-            <form action="/login">
+            <form action="includes/login">
                 <center>
                     <h2>Login</h2>
                 </center>
@@ -26,7 +26,7 @@
                     <button type="button">Login</button>
                 </a href="index.html">
             </form>
-            <a href="register.html" id="register">register</a>
+            don't have an account <a href="signup.php">register</a> now!
         </div>
     </section>
 </body>
