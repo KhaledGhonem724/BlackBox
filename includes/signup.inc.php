@@ -25,6 +25,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         if ($errors) {
             $_SESSION["errors_signup"] = $errors;
+            // to save the wrong data forthe user to edit
+            $signupData = [
+                "username" => $username,
+                "email" => $email,
+            ];
+            $_SESSION["signup_data"] = $signupData;
+
             header("Location: ../signup.php");
             die();
         }
