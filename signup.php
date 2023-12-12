@@ -30,7 +30,7 @@ require_once "includes/config_session.inc.php";
                 <input type="password" id="NewPassword" name="pwd" placeholder="Enter a strong password" required />
                 <button>Register</button>
             </form>
-            <a href="login.html" id="register">login</a>
+            already have an account <a href="login.php" id="register">login</a>!
         </div>
     </section>
     <?php

@@ -1,3 +1,9 @@
+<?php
+require_once "includes/config_session.inc.php";
+require_once "includes/login_view.inc.php";
+require_once "includes/signup_view.inc.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,21 +20,23 @@
         <div class="login-container">
 
             <!-- Login Form -->
-            <form action="includes/login">
+            <form action="includes/login.inc.php" method="post">
                 <center>
                     <h2>Login</h2>
                 </center>
                 <label for="username">Username:</label>
-                <input type="text" id="username" required />
+                <input type="text" id="username" name="username" placeholder="username" required />
                 <label for="password">Password:</label>
-                <input type="password" id="password" required />
-                <a href="index.html">
-                    <button type="button">Login</button>
-                </a href="index.html">
+                <input type="password" id="password" name="pwd" placeholder="password" required />
+                <button>Login</button>
             </form>
             don't have an account <a href="signup.php">register</a> now!
+            <?php
+            check_login_errors();
+            ?>
         </div>
     </section>
+
 </body>
 
 </html>
