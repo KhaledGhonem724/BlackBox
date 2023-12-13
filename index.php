@@ -36,7 +36,7 @@ require_once "includes/signup_view.inc.php";
         <!-- Log In Button -->
         <!-- About Us Button -->
         <a href="#aboutUs">
-            <button>About As</button>
+            <button>About us</button>
         </a>
         <a href="login.php">
             <button>
