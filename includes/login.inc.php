@@ -41,6 +41,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: ../login.php?login=success");
         $pdo = null;
         $stmt = null;
+        if ($_Get[""]) {
+            # code...
+        }
         die();
     } catch (PDOException $e) {
         die("Query failed" . $e->getMessage());
