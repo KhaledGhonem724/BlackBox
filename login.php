@@ -16,6 +16,33 @@ require_once "includes/signup_view.inc.php";
 </head>
 
 <body>
+    <header>
+        <!-- Logo and Project Name Container -->
+        <div class="logo-container">
+            <a href="index.php">
+                <div class="header-logo">
+                    <img src="images.png" alt="Your Logo">
+                </div>
+                <div class="project-name">Black Box</div>
+            </a>
+        </div>
+        <!-- Navigation Buttons -->
+        <!-- Add Site Button -->
+        <a href="#main-section">
+            <button>Add Site</button>
+        </a>
+        <!-- Log In Button -->
+        <!-- About Us Button -->
+        <a href="#aboutUs">
+            <button>About As</button>
+        </a>
+        <a href="login.php">
+            <button>
+                <?php output_username() ?>
+            </button>
+        </a>
+
+    </header>
     <section id="section1" class="section1">
         <div class="login-container">
 

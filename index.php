@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+require_once "includes/config_session.inc.php";
+require_once "includes/login_view.inc.php";
+require_once "includes/signup_view.inc.php";
+?>
 
 <head>
     <meta charset="UTF-8" />
@@ -14,12 +19,14 @@
     <header>
         <!-- Logo and Project Name Container -->
         <div class="logo-container">
-            <!-- Your Logo -->
-            <div class="header-logo">
-                <img src="images.png" alt="Your Logo">
-            </div>
-            <!-- Project Name -->
-            <div class="project-name">Black Box</div>
+            <a href="index.php">
+                <button class="logo-container">
+                    <div class="header-logo">
+                        <img src="images.png" alt="Your Logo">
+                    </div>
+                    <div class="project-name">Black Box</div>
+                </button>
+            </a>
         </div>
         <!-- Navigation Buttons -->
         <!-- Add Site Button -->
@@ -32,7 +39,9 @@
             <button>About As</button>
         </a>
         <a href="login.php">
-            <button>Log In</button>
+            <button>
+                <?php output_username() ?>
+            </button>
         </a>
 
     </header>
@@ -63,6 +72,23 @@
                 <div id="addedData" class="hidden">
                     <h4>Added Site Data:</h4>
                     <ul id="siteList"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="main-section" class="main-section">
+        <!-- Container for Site Details Form and Added Data -->
+        <div class="center-container">
+            <div class="site-details-container">
+                <!-- Site Details Form -->
+                <div class="site-details-form">
+                    <center>
+                        <h3>Log Out</h3>
+                    </center>
+                    <!-- Form for Adding a Site -->
+                    <form id="addSiteForm" action="includes/logout.inc.php" method="post">
+                        <button>Log Out</button>
+                    </form>
                 </div>
             </div>
         </div>

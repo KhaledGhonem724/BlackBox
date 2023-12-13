@@ -15,3 +15,11 @@ function check_login_errors()
         echo '<p class="form-success">' . "login Success!" . "</p>";
     }
 }
+function output_username()
+{
+    if (isset($_SESSION["user_id"])) {
+        echo $_SESSION["user_username"];
+    } else {
+        echo "Login";
+    }
+}

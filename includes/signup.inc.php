@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // empty your resources
         $pdo = null;
         $stmt = null;
-        header("Location: ../signup.php?signup=success");
+        header("Location: ../login.php?signup=success");
         die();
     } catch (PDOException $e) {
         die("Query failed" . $e->getMessage());

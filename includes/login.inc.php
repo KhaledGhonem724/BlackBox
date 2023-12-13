@@ -38,12 +38,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["last_regeneration"] = time();
 
         // empty your resources
-        header("Location: ../login.php?login=success");
+        header("Location: ../index.php?login=success");
         $pdo = null;
         $stmt = null;
-        if ($_Get[""]) {
-            # code...
-        }
         die();
     } catch (PDOException $e) {
         die("Query failed" . $e->getMessage());
