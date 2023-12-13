@@ -31,12 +31,12 @@ require_once "includes/signup_view.inc.php";
                 <button>Login</button>
             </form>
             don't have an account <a href="signup.php">register</a> now!
-            <?php
-            check_login_errors();
-            ?>
+
         </div>
     </section>
-
+    <?php
+    check_login_errors();
+    ?>
 </body>
 
 </html>
