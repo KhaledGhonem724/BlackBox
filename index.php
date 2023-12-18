@@ -4,6 +4,7 @@
 require_once "includes/config_session.inc.php";
 require_once "includes/login_view.inc.php";
 require_once "includes/signup_view.inc.php";
+require_once "includes/addsite_view.inc.php";
 ?>
 
 <head>
@@ -36,7 +37,7 @@ require_once "includes/signup_view.inc.php";
         <!-- Log In Button -->
         <!-- About Us Button -->
         <a href="#aboutUs">
-            <button>About As</button>
+            <button>About us</button>
         </a>
         <a href="login.php">
             <button>
@@ -56,17 +57,20 @@ require_once "includes/signup_view.inc.php";
                         <h3>Add Site</h3>
                     </center>
                     <!-- Form for Adding a Site -->
-                    <form id="addSiteForm">
+                    <form id="addSiteForm" action="includes/addsite.inc.php" method="post">
                         <label for="siteName">Site Name:</label>
-                        <input type="text" id="siteName" required />
+                        <input type="text" id="siteName" name="sitename" />
                         <label for="username">Username:</label>
-                        <input type="text" id="username" required />
+                        <input type="text" id="username" name="siteusername" />
                         <label for="siteEmail">Email:</label>
-                        <input type="email" id="siteEmail" required />
+                        <input type="text" id="siteEmail" name="siteemail" />
                         <label for="sitePassword">Password:</label>
-                        <input type="password" id="sitePassword" required />
-                        <button type="button" onclick="addSite()">Add Site</button>
+                        <input type="password" id="sitePassword" name="sitepwd" />
+                        <button>Add Site</button>
                     </form>
+                    <?php
+                    check_addsite_errors();
+                    ?>
                 </div>
                 <!-- Added Site Data Section -->
                 <div id="addedData" class="hidden">
@@ -93,7 +97,6 @@ require_once "includes/signup_view.inc.php";
             </div>
         </div>
     </section>
-    <!-- Section for Login -->
 
     <!-- Footer Section -->
 
