@@ -5,40 +5,55 @@ body {
   background-color: #f4f4f4;
 }
 
+/* Styles for the header */
 header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1em;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.logo-container {
-  display: flex;
-  align-items: center;
-}
-.header-logo {
-  border-radius: 50%;
-  margin-right: 10px;
-  overflow: hidden;
-}
-.header-logo img {
-  width: 50px;
-  height: 50px;
+  background-color: black;
+  padding: 10px;
 }
 
-.logo {
-  width: 50px;
-  height: 50px;
-  background-color: #fff;
-  /* Change the background color of your logo */
-  border-radius: 50%;
+/* Styles for the navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+/* Styles for the logo button */
+.logo-button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+/* Styles for the logo image */
+.navbar-logo {
+  height: 60px;
   margin-right: 10px;
 }
 
+/* Styles for the project name */
 .project-name {
-  font-size: 1.5em;
+  font-size: 20px;
+}
+
+/* ... (previous CSS code) ... */
+
+/* Updated Styles for the navigation links */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 40px; /* Increased gap between links */
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
 }
 
 button {
@@ -52,11 +67,6 @@ button {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #323131;
-  /* Darker shade for hover effect */
 }
 
 .hidden {
@@ -148,13 +158,84 @@ form {
   flex-direction: column;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1em;
-}
 #register {
-  margin-left: 250px;
   font-size: 15px;
+  margin-top: 20px;
+}
+#register-massge {
+  font-size: 15px;
+  margin-top: 20px;
+margin-left: 85px;
+}
+.columns-container {
+  display: flex;
+
+}
+
+.column:nth-child(1) {
+  flex: 2; /* First column takes up 1/3 of the space */
+  margin: 20px; /* Adding margin to the first column */
+}
+
+.column:nth-child(2) {
+  flex: 1; /* Second column takes up 2/3 of the space */
+}
+/* Basic styling for the card */
+/* Basic styling for the card */
+/* Styles for the card and paragraphs */
+.card {
+  background-color: white; /* Set background color to white */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.card-body p {
+  margin-bottom: 10px;
+}
+
+/* Styles for the icon container */
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styles for the icons */
+.remove-icon {
+  color: red; /* Set remove icon color to red */
+  cursor: pointer;
+}
+
+.favorite-icon {
+  color: #ccc; /* Set initial color of star icon to gray */
+  cursor: pointer;
+}
+/* Footer Styles */
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px; /* Decreased padding */
+  font-size: 14px; /* Reduced font size */
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 5px; /* Reduced margin */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.team-member {
+  margin-bottom: 10px; /* Reduced margin */
+}
+#Favorite-card{
+  width: 850px;
+  margin-left: 300px;
 }

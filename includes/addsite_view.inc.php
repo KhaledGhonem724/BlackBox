@@ -6,7 +6,7 @@ function check_addsite_errors()
         $errors = $_SESSION['errors_addsite'];
         echo "<br>";
         foreach ($errors as $error) {
-            echo '<p class="form-error">' . $error . "</p>";
+            echo '<p style="color: red; font-size: 14px;  margin-right: 10px;" class="form-error">' . $error . "</p>";
         }
         unset($_SESSION['errors_addsite']);
     } else if (isset($_GET['addsite']) && $_GET['addsite'] === "success") {
