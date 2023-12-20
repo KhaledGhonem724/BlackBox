@@ -5,6 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $siteusername = $_POST["siteusername"];
     $siteemail = $_POST["siteemail"];
     $sitepwd = $_POST["sitepwd"];
+    $sitelink = $_POST["sitelink"];
     try {
         require_once "dbh.inc.php";
         require_once "addsite_model.inc.php";
@@ -30,8 +31,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: ../index.php");
             die();
         }
-        add_site($pdo, $sitename, $siteusername, $siteemail, $sitepwd);
-
+        add_site($pdo, $sitename, $siteusername, $siteemail, $sitepwd, $sitelink);
+        $_SESSION["user_sites"] = get_sites($pdo, $_SESSION["user_id"]);
+        $_SESSION["user_fav_sites"] = get_fav_sites($pdo, $_SESSION["user_id"]);
         // empty your resources
         $pdo = null;
         $stmt = null;

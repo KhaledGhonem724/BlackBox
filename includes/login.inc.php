@@ -6,6 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         require_once "dbh.inc.php";
         require_once "login_model.inc.php";
+        require_once "addsite_model.inc.php";
         require_once "login_contr.inc.php";
         require_once "config_session.inc.php";
         // ERROR handler
@@ -36,6 +37,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["user_id"] = $result["id"];
         $_SESSION["user_username"] = htmlspecialchars($result["username"]);
         $_SESSION["last_regeneration"] = time();
+        $_SESSION["user_sites"] = get_sites($pdo, $_SESSION["user_id"]);
+        $_SESSION["user_fav_sites"] = get_fav_sites($pdo, $_SESSION["user_id"]);
 
         // empty your resources
         header("Location: ../index.php?login=success");
