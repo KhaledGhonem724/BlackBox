@@ -26,8 +26,10 @@ function card($site): string
                             readonly>
                         <input type="text" name="displayEmail" placeholder="No Email" value="' . $site['siteemail'] . '" readonly>
                         <input type="text" name="displayPwd" placeholder="No Password" value="' . $site['sitepwd'] . '" readonly>
-                        <input type="submit" name="delete_button" value="Delete">
-                        <input type="submit" name="favorite_button" value="Favorite" />
+                        <div>
+                            <input type="submit" name="delete_button" value="Delete">
+                            <input type="submit" name="favorite_button" value="Favorite" />
+                        </div>
                     </form>
                 </div>
             </div>';
@@ -36,7 +38,7 @@ function noCard(): string
 {
     return '<div class="card">
                 <div class="card-body">
-                    <p>This user doesn\'t have any sites</p>
+                    <p>This list doesn\'t contain any sites</p>
                 </div>
             </div>';
 }

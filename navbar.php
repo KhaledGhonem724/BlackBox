@@ -11,6 +11,7 @@ require_once "includes/manage_site_view.inc.php";
             <span class="project-name">Black Box</span>
         </a>
         <ul class="nav-links">
+            <li><a href="index.php">Home</a></li>
             <li><a href="Favorite.php">Favorite</a></li>
             <li><a href="#footer">About us</a></li>
             <li><a href="login.php">

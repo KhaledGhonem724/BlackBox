@@ -25,19 +25,6 @@ require_once "includes/manage_site_view.inc.php";
     ?>
     <div class="columns-container">
         <div class="column">
-            <div class="card">
-                <div class="card-body">
-                    <p>Site :</p>
-                    <form class="displatSiteForm" action="includes/manage_site.inc.php" method="post">
-                        <input type="text" name="displayUsername" placeholder="the Username" value="the Username"
-                            readonly>
-                        <input type="text" name="displayEmail" placeholder="the Email" value="the Email" readonly>
-                        <input type="text" name="displayPwd" placeholder="the Password" value="the Password" readonly>
-                        <input type="submit" name="delete_button" value="Delete">
-                        <input type="submit" name="favorite_button" value="Favorite" />
-                    </form>
-                </div>
-            </div>
             <?php
             display_sites();
             ?>
