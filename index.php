@@ -99,14 +99,9 @@ require_once "includes/manage_site_view.inc.php";
 
         </div>
     </div>
-
-
     <?php
     require "footer.php";
     ?>
-
-
-
 </body>
 
 </html>
