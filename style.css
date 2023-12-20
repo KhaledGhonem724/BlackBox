@@ -247,3 +247,6 @@ ul {
   color: green;
   font-size: 16px;
 }
+.displatSiteForm input[type="submit"]{
+  width: 100px;
+}

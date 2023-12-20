@@ -8,8 +8,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sitelink = $_POST["sitelink"];
     try {
         require_once "dbh.inc.php";
-        require_once "addsite_model.inc.php";
-        require_once "addsite_contr.inc.php";
+        require_once "manage_site_model.inc.php";
+        require_once "manage_site_contr.inc.php";
         require_once "config_session.inc.php";
         // ERROR handler
         $errors = [];

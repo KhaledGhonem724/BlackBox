@@ -2,7 +2,7 @@
 require_once "includes/config_session.inc.php";
 require_once "includes/login_view.inc.php";
 require_once "includes/signup_view.inc.php";
-require_once "includes/addsite_view.inc.php";
+require_once "includes/manage_site_view.inc.php";
 ?>
 
 <!DOCTYPE html>
@@ -28,13 +28,14 @@ require_once "includes/addsite_view.inc.php";
             <div class="card">
                 <div class="card-body">
                     <p>Site :</p>
-                    <p>Username:</p>
-                    <p>Email:</p>
-                    <p>Password:</p>
-                    <div class="icon-container">
-                        <i class="fas fa-trash-alt remove-icon"></i>
-                        <i class="far fa-star favorite-icon"></i>
-                    </div>
+                    <form class="displatSiteForm" action="includes/manage_site.inc.php" method="post">
+                        <input type="text" name="displayUsername" placeholder="the Username" value="the Username"
+                            readonly>
+                        <input type="text" name="displayEmail" placeholder="the Email" value="the Email" readonly>
+                        <input type="text" name="displayPwd" placeholder="the Password" value="the Password" readonly>
+                        <input type="submit" name="delete_button" value="Delete">
+                        <input type="submit" name="favorite_button" value="Favorite" />
+                    </form>
                 </div>
             </div>
             <?php
